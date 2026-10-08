@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin : 0;
+}
+
+main {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #fff7cc 0%, #ffe0b2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1 {
+  color: #d97706;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #92400e;
+  text-align: center;
+}
+
+.point-title {
+  color: #111827;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+.graph-area {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.graph-area h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #92400e;
+}
+
+.graph-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.graph-name {
+  width: 55px;
+  flex-shrink: 0;
+  font-weight: bold;
+  color: #92400e;
+}
+
+.graph-bar {
+  height: 22px;
+  background-color: #f59e0b;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.graph-row strong {
+  width: 70px;
+  flex-shrink: 0;
+  color: #92400e;
+  white-space: nowrap;
+}
+
+.button-area {
+  display: flex;
+  justify-content: flex-start;
+  gap:10px;
+  margin-top: 20px;
+}
+
+.button-area button {
+  width:100px;
+  padding:8px 10px;
+  border:none;
+  border-radius: 8px;
+  background-color: ivory;
+  color:black;
+  font-weight: bold;
+  cursor: pointer;
+  white-space:nowrap;
+}
+
+.button-area button:hover{
+  background-color: #d97706;
+}
+
+
+.point-control {
+  margin: 0 auto 30px;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #fde68a;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+}
+
+.point-control h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+
+.point-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.point-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #92400e;
+}
+
+.point-form select,
+.point-form input {
+  padding: 12px;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+}
+
+
+.apply-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #d97706;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background: #fcd34d;
+}
+
+
+.result-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #ecfdf5;
+  color: #15803d;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 사용자 목록 */
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.user-item span {
+  color: #92400e;
+}
+
+.user-item strong {
+  color: #92400e;
+}
+
+.user-count {
+  margin-top: 15px;
+  text-align: center;
+  color: #92400e;
+  font-weight: bold;
+}
+
+
+.graph-background {
+  width: 100%;
+  flex: 1;
+  height: 30px;
+  background: #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.graph-bar {
+  height: 100%;
+  background: #92400e;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+
+@media (max-width: 750px) {
+  .admin-page {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+}
