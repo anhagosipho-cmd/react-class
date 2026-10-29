@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin:0;
+  background: #f9f1f5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color:#2a0f18;
+}
+.page {
+  width:100%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding:20px;
+}
+.page h1{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:20px;
+  padding:20px;
+  background:#ffe0f3;
+  border-radius:12px;
+}
+.time-box strong {
+  font-size: 20px;
+  color: #ca3870;
+}
+.form-box {
+  margin-bottom: 25px;
+  padding:25px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+  margin-bottom: 15px;
+}
+.form-group label {
+  font-weight: bold;
+  color:#69475b;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #e5b9c9;
+border-radius: 8px;
+font-size: 15px;
+}
+
+.form-group textarea {
+min-height: 90px;
+resize: vertical;
+}
+
+.add-button {
+width: 100%;
+padding: 13px;
+border: none;
+border-radius: 8px;
+background: #d63384;
+color: white;
+font-weight: bold;
+cursor: pointer;
+}
+
+.add-button {
+background: #b8256c;
+}
+
+.message {
+margin-top: 15px;
+padding: 10px;
+background: #fce4ec;
+border-radius: 8px;
+color: #9c2455;
+font-weight: bold;
+}
+
+.summary-box {
+margin-bottom: 25px;
+padding: 25px;
+background: white;
+border-radius: 14px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.summary-list {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+}
+
+.summary-list div {
+padding: 15px;
+text-align: center;
+background: #fff0f5;
+border-radius: 8px;
+}
+
+.summary-list span {
+display: block;
+margin-bottom: 6px;
+color: #ad6583;
+}
+
+.summary-list strong {
+font-size: 20px;
+color: #8e244f;
+}
+
+.student-box {
+padding: 25px;
+background: white;
+border-radius: 14px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.student-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.student-header button {
+padding: 9px 14px;
+border: none;
+border-radius: 7px;
+background: #ad456b;
+color: white;
+cursor: pointer;
+}
+
+.student-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 12px;
+padding: 18px;
+background: #fff0f5;
+border-radius: 10px;
+}
+
+.student-card h3 {
+margin-top: 0;
+margin-bottom: 8px;
+}
+
+.student-card p {
+margin: 4px 0;
+color: #ad6583;
+}
+
+.delete-button {
+padding: 9px 14px;
+border: none;
+border-radius: 7px;
+background: #e85d85;
+color: white;
+cursor: pointer;
+}
+
+.empty-message {
+text-align: center;
+color: #c08aa0;
+}
+
+@media (max-width: 650px) {
+.summary-list {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.student-card {
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+.title-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.title-center h1 {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 20px;
+  padding: 0;
+}
+}
